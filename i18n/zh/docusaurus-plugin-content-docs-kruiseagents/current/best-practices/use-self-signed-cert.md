@@ -1,4 +1,4 @@
-# 最佳实践：通过自签名证书以 E2B 协议访问 sandbox-manager
+# 通过自签名证书以 E2B 协议访问 sandbox-manager
 
 本文给出了一种通过自签证书访问 sandbox-manager 的最佳实践，包括如何通过一个优化的脚本创建证书、如何将证书安装到集群中、如何配置
 E2B 客户端。

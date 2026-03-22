@@ -1,4 +1,4 @@
-# Best Practice: Accessing sandbox-manager via E2B Protocol with Self-Signed Certificates
+# Accessing sandbox-manager via E2B Protocol with Self-Signed Certificates
 
 This document provides a best practice for accessing sandbox-manager via self-signed certificates, including how to
 create certificates through an optimized script, how to install certificates in the cluster, and how to configure the

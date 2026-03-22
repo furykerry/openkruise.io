@@ -1,4 +1,4 @@
-# Best Practice: Managing sandbox-manager Self-Signed Certificates with cert-manager
+# Managing sandbox-manager Self-Signed Certificates with cert-manager
 
 This document provides a best practice for managing and deploying sandbox-manager self-signed certificates using
 cert-manager.

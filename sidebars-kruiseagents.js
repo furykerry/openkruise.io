@@ -18,7 +18,8 @@ module.exports = {
             items: [
                 'introduction',
                 'installation',
-                'design-concept'
+                'core-concept',
+                'architecture'
             ],
         },
         {
@@ -44,13 +45,17 @@ module.exports = {
         {
             type: 'category',
             label: 'Developer Manuals',
-            collapsed: false,
+            collapsed: true,
             items: [
                 'developer-manuals/contribution',
                 'developer-manuals/e2b-client',
-                'developer-manuals/go-client',
-                'developer-manuals/python-client',
-                'developer-manuals/java-client',
+                {
+                   'K8S SDK': [
+                     "developer-manuals/go-client",
+                     "developer-manuals/python-client",
+                     "developer-manuals/java-client",
+                   ],
+                },
                 'developer-manuals/faq',
             ],
         },

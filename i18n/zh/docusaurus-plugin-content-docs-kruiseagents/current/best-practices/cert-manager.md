@@ -1,4 +1,4 @@
-# 最佳实践：使用 cert-manager 管理 sandbox-manager 自签证书
+# 使用 cert-manager 管理 sandbox-manager 自签证书
 
 本文提供了一种使用 cert-manager 来管理和部署 sandbox-manager 自签证书的最佳实践。
 

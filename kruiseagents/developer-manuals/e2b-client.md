@@ -1,4 +1,4 @@
-# Using OpenKruise Agents Sandbox via E2B SDK
+# E2B SDK
 
 The sandbox-manager component of OpenKruise Agents supports two E2B integration protocols: native E2B protocol and
 private protocol.
@@ -48,12 +48,8 @@ For scenarios where the Ingress gateway does not use default HTTP ports (80 or 4
 `your.domain.com:8080`:
 
 - Client-side: Set environment variable `E2B_DOMAIN=your.domain.com:8080`
-- Server-side:
-  -
-  In [configuration_patch.yaml](https://github.com/openkruise/agents/blob/master/config/sandbox-manager/configuration_patch.yaml)
-  **keep the port**, set E2B Domain to `your.domain.com:8080`
-    -
-  In [ingress_patch.yaml](https://github.com/openkruise/agents/blob/master/config/sandbox-manager/ingress_patch.yaml)
+- Server-side: In [configuration_patch.yaml](https://github.com/openkruise/agents/blob/master/config/sandbox-manager/configuration_patch.yaml), 
+  **keep the port**, set E2B Domain to `your.domain.com:8080`; In [ingress_patch.yaml](https://github.com/openkruise/agents/blob/master/config/sandbox-manager/ingress_patch.yaml),
   **do not keep the port**, replace `replace.with.your.domain` with `your.domain.com`
 
 ## How to install a certificate

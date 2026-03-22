@@ -1,4 +1,4 @@
-# 通过 E2B SDK 使用 OpenKruise Agents Sandbox
+# E2B SDK
 
 OpenKruise Agents 的 sandbox-manager 组件支持两种 E2B 接入协议：原生 E2B 协议和私有协议。
 
@@ -43,12 +43,8 @@ export E2B_DOMAIN=your.domain.com
 对于 Ingress 网关不使用默认 HTTP 端口（80 或 443）的场景。例如，如果域名是 `your.domain.com:8080`：
 
 - 客户端：设置环境变量 `E2B_DOMAIN=your.domain.com:8080`
-- 服务端：
-  -
-  在 [configuration_patch.yaml](https://github.com/openkruise/agents/blob/master/config/sandbox-manager/configuration_patch.yaml)
-  中，**保留端口**，将 E2B Domain 设置为 `your.domain.com:8080`
-    -
-  在 [ingress_patch.yaml](https://github.com/openkruise/agents/blob/master/config/sandbox-manager/ingress_patch.yaml)
+- 服务端：在 [configuration_patch.yaml](https://github.com/openkruise/agents/blob/master/config/sandbox-manager/configuration_patch.yaml)
+  中，**保留端口**，将 E2B Domain 设置为 `your.domain.com:8080`; 在 [ingress_patch.yaml](https://github.com/openkruise/agents/blob/master/config/sandbox-manager/ingress_patch.yaml)
   中，**不要保留端口**，将 `replace.with.your.domain` 替换为 `your.domain.com`
 
 ## 如何安装证书
